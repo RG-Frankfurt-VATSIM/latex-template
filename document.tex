@@ -10,9 +10,9 @@
 \usepackage{booktabs}
 \usepackage{colortbl}
 \usepackage[english]{babel}
-\usepackage[en-US]{datetime2}
+\usepackage[ngerman, num]{isodate}
 \usepackage{hyperref}
-\usepackage[portrait,top=1.5cm,bottom=1.5cm,right=1.5cm,left=1.5cm,includehead,includefoot]{geometry}
+\usepackage[portrait,top=1cm,bottom=1.5cm,right=1.5cm,left=1.5cm,includehead,includefoot]{geometry}
 \usepackage{fancyhdr, graphicx}
 \usepackage{lastpage}
 
@@ -51,8 +51,8 @@
 \normalsize
 
 \vspace{.5cm}
-%\DTMlangsetup{showdayofmonth=false}
-\today
+\the\day.\the\month.\the\year
+%\today
 \end{center}
 
 \tableofcontents
